@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Digital Fortress </title>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">Digital Fortress</div>
+    
+  <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+    <div class="nav-center" id="nav-center" >
+      <a href="index.html">Home</a>
+      <a href="net.html">Network</a>
+      <a href="sec.html">Security</a>
+      <a href="eth.html">Tools</a>
+      <a href="py.html">Python</a>
+      <a href="mcq.html">Quiz</a>
+    </div>
+     <div class="nav-right">
+    <button><a href="sign.html">Sign Up </a></button>
+    <button><a href="log.html" >Log In</a> </button>
+  </div>
+  </nav>
+  <main>
+    <div class="below">
+    <div class="main-left">
+      <h1>What is Cybersecurity?</h1>
+      <p>
+        Cybersecurity is the practice of protecting systems, networks, and programs 
+        from digital attacks. These cyberattacks are usually aimed at accessing, 
+        changing, or destroying sensitive information, extorting money, or 
+        interrupting business processes. <br><br>
+        To learn cybersecurity, one should focus on networking, programming (Python is 
+        highly recommended), ethical hacking, and understanding security tools & 
+        frameworks.
+      </p>
+  
+    </div>
+<div class="auth-buttons">
+<button class="signup-btn"><a href="sign.html"> Sign Up</a> </button>
+<button class="login-btn"><a href="log.html">Log In</a></button>
+</div>
+</div>
+</div>
+    <div class="main-right">
+      <img src="img/white.jpg" alt="Cybersecurity">
+    </div>
+  </main>
+<br>
+  <br>
+  <br>
+<footer>
+<div class="final">
+    <br>
+       <div class="all">
+       <ul>
+         <li class="fl" ><a class="fs" href="index.html">Home</a> </li>
+         <li class="fl" ><a class="fs" href="net.html">Network</a> </li>
+         <li class="fl" ><a class="fs" href="eth.html">Tools</a> </li>
+         <li class="fl" ><a class="fs" href="sec.html">Security</a></li>
+         <li class="fl" ><a class="fs" href="py.html">Python</a></li>
+         <li class="fl" ><a class="fs" href="mcq.html">Quiz</a></li>
+       </ul></div>
+       <br>
+       <br> 
+</footer>
+
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navCenter = document.getElementById('nav-center');
+
+
+hamburger.addEventListener('click', () => {
+hamburger.classList.toggle('open');
+navCenter.classList.toggle('mobile-show');
+});
+</script>
+</body>
+</html>

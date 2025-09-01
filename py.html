@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="py.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Digital Fortress </title>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">Digital Fortress</div>
+    <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+    <div class="nav-center"   id="nav-center" >
+      <a href="index.html">Home</a>
+      <a href="net.html">Network</a>
+      <a href="sec.html">Security</a>
+      <a href="eth.html">Tools</a>
+      <a href="py.html">Python</a>
+      <a href="mcq.html">Quiz</a>
+    </div>
+     <div class="nav-right">
+    <button><a href="sign.html">Sign Up </a></button>
+    <button><a href="log.html" >Log In </a> </button>
+  </div>
+  </nav>
+  <main>
+    <div class="container">
+  <h1>Python in Cybersecurity</h1>
+
+  <div class="code-box">
+    <h2>1. Network Scanning</h2>
+    <p>Python can be used to perform network scanning to find live hosts, open ports, and services. This is useful for reconnaissance in ethical hacking.</p>
+    <pre>
+import socket
+
+target = "192.168.1.1"
+ports = [21, 22, 80]
+
+for port in ports:
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    result = s.connect_ex((target, port))
+    if result == 0:
+        print(f"Port {port} is open")
+    s.close()
+    </pre>
+  </div>
+
+  <div class="code-box">
+    <h2>2. Password Cracking</h2>
+    <p>Python can automate brute-force attacks on login forms or hash cracking using libraries. Always use ethically on your own systems or authorized tests.</p>
+    <pre>
+import itertools
+
+chars = "abc123"
+for length in range(1, 5):
+    for guess in itertools.product(chars, repeat=length):
+        print("".join(guess))
+    </pre>
+  </div>
+
+  <div class="code-box">
+    <h2>3. Packet Sniffing</h2>
+    <p>Python can sniff network packets to monitor traffic, analyze protocols, or detect suspicious activity using libraries like scapy.</p>
+    <pre>
+from scapy.all import sniff
+
+def monitor(packet):
+    print(packet.summary())
+
+sniff(prn=monitor, count=10)
+    </pre>
+  </div>
+
+  <div class="code-box">
+    <h2>4. Hashing and Encryption</h2>
+    <p>Python is used to hash passwords, encrypt data, and verify integrity, which is critical in cybersecurity.</p>
+    <pre>
+import hashlib
+
+password = "mypassword"
+hashed = hashlib.sha256(password.encode()).hexdigest()
+print("SHA-256 Hash:", hashed)
+    </pre>
+  </div>
+
+  <div class="code-box">
+    <h2>5. Automating Tasks</h2>
+    <p>Python automates repetitive tasks like scanning multiple IPs, generating reports, or testing vulnerabilities.</p>
+    <pre>
+import os
+
+for i in range(1, 5):
+    os.system(f"ping -c 1 192.168.1.{i}")
+    </pre>
+  </div>
+
+</div>
+  </main>
+  <br>
+  <br>
+  <br>
+<footer>
+<div class="final">
+    <br>
+       <div class="all">
+       <ul>
+         <li class="fl" ><a class="fs" href="index.html">Home</a> </li>
+         <li class="fl" ><a class="fs" href="net.html">Network</a> </li>
+         <li class="fl" ><a class="fs" href="eth.html">Tools</a> </li>
+         <li class="fl" ><a class="fs" href="sec.html">Security</a></li>
+         <li class="fl" ><a class="fs" href="py.html">Python</a></li>
+         <li class="fl" ><a class="fs" href="mcq.html">Quiz</a></li>
+       </ul></div>
+       <br>
+       <br> 
+</footer>
+  <script>
+const hamburger = document.getElementById('hamburger');
+const navCenter = document.getElementById('nav-center');
+
+
+hamburger.addEventListener('click', () => {
+hamburger.classList.toggle('open');
+navCenter.classList.toggle('mobile-show');
+});
+</script>
+</body>
+</html>

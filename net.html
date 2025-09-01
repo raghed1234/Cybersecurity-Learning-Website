@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="net.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title> Network </title>
+</head>
+<body>
+  <nav>
+    <div class="nav-left">Digital Fortress</div>
+    <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+    <div class="nav-center"  id="nav-center"  >
+      <a href="index.html">Home</a>
+      <a href="net.html">Network</a>
+      <a href="sec.html">Security</a>
+      <a href="eth.html">Tools</a>
+      <a href="py.html">Python</a>
+      <a href="mcq.html">Quiz</a>
+    </div>
+     <div class="nav-right">
+    <button><a href="sign.html">Sign Up </a></button>
+    <button><a href="log.html">Log In </a> </button>
+  </div>
+ 
+  </nav>
+  <header>
+    <h1>OSI Model Layers</h1>
+    <p>
+      The OSI (Open Systems Interconnection) model has 7 layers, each responsible 
+      for different aspects of data communication. Below is a quick overview:
+    </p>
+  </header>
+  <section class="layer-cards">
+    <div class="layer-card"><h2>Physical Layer</h2><p>Transmission of raw data through cables, signals, and hardware.</p></div>
+    <div class="layer-card"><h2>Data Link Layer</h2><p>Handles error detection, correction, and reliable data transfer.</p></div>
+    <div class="layer-card"><h2>Network Layer</h2><p>Determines data paths and handles logical addressing (IP).</p></div>
+    <div class="layer-card"><h2>Transport Layer</h2><p>Ensures complete and reliable data delivery (TCP/UDP).</p></div>
+    <div class="layer-card"><h2>Session Layer</h2><p>Manages sessions and keeps communication between devices alive.</p></div>
+    <div class="layer-card"><h2>Presentation Layer</h2><p>Formats, encrypts, and translates data for applications.</p></div>
+    <div class="layer-card"><h2>Application Layer</h2><p>Provides services like HTTP, FTP, email for end users.</p></div>
+  </section>
+
+  <div class="buffer"></div>
+
+  <section class="details">
+    <h2>Physical Layer</h2>
+    <p>The physical layer is the first and lowest layer of the OSI (Open Systems Interconnection) model, responsible for the actual transmission of raw data bits over a physical medium. It deals with the hardware aspects of networking, such as cables, switches, network interface cards, and wireless signals. This layer defines characteristics like voltage levels, timing of signals, data rates, and the physical connectors used to ensure that binary data (0s and 1s) can travel reliably between devices. Essentially, the physical layer provides the foundation that allows higher layers to build communication protocols, focusing on how data is physically moved from one point to another rather than its meaning or structure.</p>
+  </section>
+
+  <div class="buffer"></div>
+
+  <section class="details">
+    <h2>Data Link Layer</h2>
+    <p>The data link layer is the second layer of the OSI model, and its main role is to ensure reliable data transfer across a physical network link. It takes the raw bits from the physical layer and organizes them into frames, adding headers and trailers that contain addressing and error-checking information. This layer is responsible for error detection and correction, flow control, and ensuring that data is delivered to the correct device on the same network using MAC (Media Access Control) addresses. It also manages how devices share access to the physical medium (for example, preventing collisions on Ethernet). In short, the data link layer provides a reliable connection between directly connected devices, making sure that the data is properly packaged and error-free before passing it to the network layer.</p>
+  </section>
+
+  <div class="buffer"></div>
+
+  <section class="details">
+    <h2>Network Layer</h2>
+    <p>The network layer is the third layer of the OSI model, and its main function is to determine how data is delivered from the source device to the destination device across multiple networks. It is responsible for logical addressing (such as IP addresses), which uniquely identifies devices, and for routing, which selects the best path for data to travel through interconnected networks. Unlike the data link layer, which only works within a single local network, the network layer ensures that data can move between different networks, even across long distances. It also handles packet forwarding, fragmentation and reassembly, and may provide basic error handling. In essence, the network layer ensures that data packets find their way from one device to another, no matter how many networks lie in between.</p>
+  </section>
+
+  <div class="buffer"></div>
+
+  <section class="details">
+    <h2>Transport Layer</h2>
+    <p>The transport layer is the fourth layer of the OSI model, and its primary role is to provide reliable, end-to-end communication between applications running on different devices. It ensures that data is delivered accurately, in order, and without duplication or loss. This layer is responsible for segmentation and reassembly, breaking large messages into smaller chunks for transmission and reassembling them at the destination. It also manages **error detection, error recovery, and flow control** to prevent one device from overwhelming another. Two common protocols at this layer are **TCP (Transmission Control Protocol)**, which provides reliable, connection-oriented communication, and **UDP (User Datagram Protocol)**, which offers faster, connectionless communication with less overhead. In short, the transport layer makes sure that applications can exchange data smoothly and reliably across a network.
+</p>
+  </section>
+
+  <div class="buffer"></div>
+
+  <section class="details">
+    <h2>Session Layer</h2>
+    <p>The session layer is the fifth layer of the OSI model, and it is responsible for establishing, managing, and terminating communication sessions between applications on different devices. A session is like a continuous exchange of data between two systems, and this layer ensures that the dialogue remains organized and synchronized. It provides services such as session establishment, synchronization, and recovery, allowing applications to resume communication smoothly after interruptions. For example, it can insert checkpoints in long data transfers so that if a failure occurs, the transfer can continue from the last checkpoint instead of starting over. In essence, the session layer acts as a coordinator, managing conversations between applications to ensure stable and efficient communication.
+</p>
+  </section>
+
+  <div class="buffer"></div>
+
+  <section class="details">
+    <h2>Presentation Layer</h2>
+    <p>The presentation layer is the sixth layer of the OSI model, and its main function is to act as a translator between the application layer and the lower layers of the network. It ensures that data sent from one system can be understood by another, regardless of differences in data formats or encoding methods. This layer handles data translation, encyption, compression, and formatting, converting information into a standardized form before transmission and then back into a usable form at the destination. For example, it might convert character encoding (like ASCII to Unicode), encrypt sensitive information for secure communication, or compress data to reduce transmission time. In short, the presentation layer makes sure that the data exchanged between applications is properly formatted, secure, and optimized for transmission.
+</p>
+  </section>
+
+  <div class="buffer"></div>
+
+  <section class="details">
+    <h2>Application Layer</h2>
+    <p>The application layer is the seventh and topmost layer of the OSI model, directly interacting with the end user and providing network services to applications. It enables communication between software programs and the network by offering protocols and services that support tasks like email (SMTP), web browsing (HTTP/HTTPS), file transfer (FTP), and remote access (SSH). Unlike the lower layers, which focus on data transmission and delivery, the application layer is concerned with the meaning and use of data, ensuring that the information is presented in a way that users and applications can understand. It also manages user authentication, privacy, and resource availability. In essence, the application layer serves as the bridge between the user’s applications and the underlying network, making communication and data exchange across devices possible.
+<p>
+  </section>
+  <br>
+  <br>
+  <br>
+<footer>
+<div class="final">
+    <br>
+       <div class="all">
+       <ul>
+         <li class="fl" ><a class="fs" href="index.html">Home</a> </li>
+         <li class="fl" ><a class="fs" href="net.html">Network</a> </li>
+         <li class="fl" ><a class="fs" href="eth.html">Tools</a> </li>
+         <li class="fl" ><a class="fs" href="sec.html">Security</a></li>
+         <li class="fl" ><a class="fs" href="py.html">Python</a></li>
+         <li class="fl" ><a class="fs" href="mcq.html">Quiz</a></li>
+       </ul></div>
+       <br>
+       <br> 
+</footer>
+  <script>
+const hamburger = document.getElementById('hamburger');
+const navCenter = document.getElementById('nav-center');
+
+
+hamburger.addEventListener('click', () => {
+hamburger.classList.toggle('open');
+navCenter.classList.toggle('mobile-show');
+});
+</script>
+</body>
+</html>
